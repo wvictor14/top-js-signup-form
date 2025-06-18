@@ -14,6 +14,7 @@ body {
 }
 .left {
   width: 40vw;
+  height: 100%;
   
    /* set relative so that banner can fit inside .left*/
   position: relative;
@@ -22,7 +23,6 @@ body {
 /* left content */
 .background {
   width: 100%;
-  max-width: 600px;
   height: 100%;
   object-fit: cover;
 }
@@ -59,6 +59,7 @@ p.odin {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .right div {
@@ -67,6 +68,13 @@ p.odin {
   align-items: center;
   justify-content: center;
 }
+
+.right .text {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
 
 .outline {
   border: 1px solid black;
