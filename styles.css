@@ -1,3 +1,5 @@
+@import url(reset.css);
+
 html, body {
   height: 100%;
 }
@@ -28,6 +30,7 @@ body {
 }
 
 .banner {
+  padding: 20px;
   position: absolute;
   top: 10em;
   height: 6em;
@@ -59,7 +62,6 @@ p.odin {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 20px;
 }
 
 .right div {
@@ -73,8 +75,55 @@ p.odin {
   flex: 1;
   display: flex;
   align-items: flex-end;
+  padding: 20px;
 }
 
+.right .form {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 0 10px;
+  background-color: #ffffff;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+.input-row {
+  display: flex;
+}
+.inputs-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 10px;
+  width: 100%;
+}
+.inputs-container label {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.inputs-container input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.header-form {
+  padding: 0 10px;
+  width: 100%;
+  text-align: left;
+}
+
+fieldset {
+  border: none;
+}
 
 .outline {
   border: 1px solid black;

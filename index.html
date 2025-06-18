@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,76 @@
   <link rel="stylesheet" href="styles.css">
   <title>Document</title>
 </head>
+
 <body>
   <div class="container">
     <div class="left">
-      <img src="img.jpg" class = 'background'>
-      <div class = 'banner'>
-        <img src= 'odin-lined.png' class="odin-lined">
-        <p class = 'odin'>ODIN</p>
+      <img src="img.jpg" class='background'>
+      <div class='banner'>
+        <img src='odin-lined.png' class="odin-lined">
+        <p class='odin'>ODIN</p>
       </div>
     </div>
     <div class="right">
-      <div class = 'text'>
-          <p> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-            <br>
-            Sign up <i>now</i> to get started.
-            <br>
-            <br>
-            You <i>know</i> you want to.
-          </p>
-        </div>
-      <div class = 'outline form'>2</div>
-      <div class = 'outline account'>3</div>
+      <div class='text'>
+        <p> This is not a real online service! You know you need something like this in your life to help you realize
+          your deepest dreams.
+          <br>
+          Sign up <i>now</i> to get started.
+          <br>
+          <br>
+          You <i>know</i> you want to.
+        </p>
+      </div>
+      <div class='form'>
+        <header class="header-form">
+          <p>Let's do this!</p>
+        </header>
+        <form action="">
+          <fieldset id='signup'>
+            <div class="inputs">
+              <div class="input-row">
+                <div class="inputs-container">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" placeholder="John">
+                </div>
+
+                <div class="inputs-container">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" placeholder="Doe">
+                </div>
+              </div>
+
+              <div class="input-row">
+                <div class="inputs-container">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="">
+                </div>
+
+                <div class="inputs-container">
+                  <label for="phone">Phone number</label>
+                  <input type="tel" id="phone" placeholder="">
+                </div>
+              </div>
+              <div class="input-row">
+                <div class="inputs-container">
+                  <label for="password">Password</label>
+                  <input type="password" id="password">
+
+                </div>
+                <div class="inputs-container">
+                  <label for="repeat-password">Repeat Password</label>
+                  <input type="password" id="repeat-password">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+      <div class='account'>3</div>
     </div>
   </div>
 </body>
+
 </html>
