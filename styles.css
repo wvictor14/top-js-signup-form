@@ -25,7 +25,7 @@ p {
 }
 
 .left {
-  width: 40vw;
+  width: 35vw;
   height: 100%;
   
    /* set relative so that banner can fit inside .left*/
@@ -42,8 +42,8 @@ p {
 .banner {
   padding: 20px;
   position: absolute;
-  top: 10em;
-  height: 6em;
+  top: 10vh;
+  height: 15vh;
   width: 100%;
   background-color: black;
   opacity: 0.6;
@@ -55,11 +55,11 @@ p {
   align-items: center;
 }
 .odin-lined {
-  height: 65px;
+  height: 10vh;
 }
 p.odin {
   color: white;
-  font-size: 3em;
+  font-size: 8vh;
   font-family: norse-bold, sans-serif; 
 }
 
@@ -122,14 +122,20 @@ p.odin {
   text-align: left;
   font-size: 0.8rem;
   font-weight: 100;
-  font-color: grey;
+  color: grey;
 }
 
 .inputs-container input {
   width: 100%;
   box-sizing: border-box;
+  border-radius: 3px;
 }
 
+input:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
 
 .header-form {
   padding: 0 20px;
@@ -140,6 +146,7 @@ p.odin {
 fieldset {
   border: none;
 }
+
 
 /* make the form inputs stretch to fill the width of it's parent div */
 .form form {
@@ -159,7 +166,23 @@ fieldset {
   gap: 5px;
 }
 .account button {
-  width: 125px;
+  width: 160px;
   margin-bottom: 10px;
-}
 
+  background-color: #04AA6D; /* Green */
+  border: none;
+  border-radius: 3px;
+
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  border: 1px solid #04AA6D;
+}
+button:hover {
+  background-color: white; /* Green */
+  color: black;
+  border: 1px solid black;
+}

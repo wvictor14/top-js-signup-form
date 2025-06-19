@@ -33,7 +33,7 @@
         <header class="header-form">
           <p>Let's do this!</p>
         </header>
-        <form action="">
+        <form action="#" method="get">
           <fieldset id='signup'>
             <div class="inputs">
               <div class="input-row">
@@ -51,7 +51,7 @@
               <div class="input-row">
                 <div class="inputs-container">
                   <label for="email">Email</label>
-                  <input type="email" id="email" placeholder="">
+                  <input type="email" id="email" placeholder="" required>
                 </div>
 
                 <div class="inputs-container">
@@ -62,23 +62,24 @@
               <div class="input-row">
                 <div class="inputs-container">
                   <label for="password">Password</label>
-                  <input type="password" id="password">
+                  <input type="password" id="password" required>
 
                 </div>
                 <div class="inputs-container">
                   <label for="repeat-password">Repeat Password</label>
-                  <input type="password" id="repeat-password">
+                  <input type="password" id="repeat-password" required>
                 </div>
               </div>
             </div>
           </fieldset>
-        </form>
 
       </div>
       <div class='account'>
-        <button>Create Account</button>
+        <button type='submit'>Create Account</button>
         <p>Already have an account? <a href>Login</a></p>
       </div>
+      
+        </form>
     </div>
   </div>
 </body>
